@@ -37,6 +37,8 @@ def countdown():
             messagebox.showinfo('شمارش معکوس' , 'زمان شما به اتمام رسیده است')
             btn_settime.config(state=NORMAL)
             btn_start.config(state=NORMAL)
+            lable_boxtime.delete(0, END)
+            
     
 #****************wedget************
 
@@ -58,5 +60,6 @@ btn_start.place(x=250 , y=140)
 btn_resettime = Button(win , text = 'تنظیم مجدد' , bg = 'yellow' , fg = 'black' , command=reset_)
 btn_resettime.place(x= 350 , y=140)
 
+print('***********')
 
 win.mainloop()
